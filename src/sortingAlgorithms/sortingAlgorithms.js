@@ -106,7 +106,8 @@ function quickSortHelper(
         quickSortHelper(mainArray, startIdx, pi - 1, animations);
         quickSortHelper(mainArray, pi + 1, endIdx, animations);
     }
-}
+} 
+
 
 function partition(arr, low, high, animations) {
     let pivot = arr[high]; // pivot  
