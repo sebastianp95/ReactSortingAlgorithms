@@ -2,8 +2,8 @@
 
 https://sebastianp95.github.io/ReactSortingAlgorithms/
 
-###Accomplished
+### Accomplished
 Merge sort algorithm
 
-###In progress
+### In progress
 Quick sort
