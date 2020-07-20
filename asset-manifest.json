@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ReactSortingAlgorithms%20/static/css/main.9a2ab989.chunk.css",
-    "main.js": "/ReactSortingAlgorithms%20/static/js/main.b4a53d77.chunk.js",
-    "main.js.map": "/ReactSortingAlgorithms%20/static/js/main.b4a53d77.chunk.js.map",
-    "runtime-main.js": "/ReactSortingAlgorithms%20/static/js/runtime-main.282b9b38.js",
-    "runtime-main.js.map": "/ReactSortingAlgorithms%20/static/js/runtime-main.282b9b38.js.map",
-    "static/js/2.9becbe37.chunk.js": "/ReactSortingAlgorithms%20/static/js/2.9becbe37.chunk.js",
-    "static/js/2.9becbe37.chunk.js.map": "/ReactSortingAlgorithms%20/static/js/2.9becbe37.chunk.js.map",
-    "index.html": "/ReactSortingAlgorithms%20/index.html",
-    "precache-manifest.26d4fd404f2d4e6c2c7b8f42fb2b96c1.js": "/ReactSortingAlgorithms%20/precache-manifest.26d4fd404f2d4e6c2c7b8f42fb2b96c1.js",
-    "service-worker.js": "/ReactSortingAlgorithms%20/service-worker.js",
-    "static/css/main.9a2ab989.chunk.css.map": "/ReactSortingAlgorithms%20/static/css/main.9a2ab989.chunk.css.map",
-    "static/js/2.9becbe37.chunk.js.LICENSE.txt": "/ReactSortingAlgorithms%20/static/js/2.9becbe37.chunk.js.LICENSE.txt"
+    "main.css": "/ReactSortingAlgorithms/static/css/main.9a2ab989.chunk.css",
+    "main.js": "/ReactSortingAlgorithms/static/js/main.570a9ba2.chunk.js",
+    "main.js.map": "/ReactSortingAlgorithms/static/js/main.570a9ba2.chunk.js.map",
+    "runtime-main.js": "/ReactSortingAlgorithms/static/js/runtime-main.8d8c5ec8.js",
+    "runtime-main.js.map": "/ReactSortingAlgorithms/static/js/runtime-main.8d8c5ec8.js.map",
+    "static/js/2.9becbe37.chunk.js": "/ReactSortingAlgorithms/static/js/2.9becbe37.chunk.js",
+    "static/js/2.9becbe37.chunk.js.map": "/ReactSortingAlgorithms/static/js/2.9becbe37.chunk.js.map",
+    "index.html": "/ReactSortingAlgorithms/index.html",
+    "precache-manifest.7dc474adb3e45dada32eb2a8f4ebf78d.js": "/ReactSortingAlgorithms/precache-manifest.7dc474adb3e45dada32eb2a8f4ebf78d.js",
+    "service-worker.js": "/ReactSortingAlgorithms/service-worker.js",
+    "static/css/main.9a2ab989.chunk.css.map": "/ReactSortingAlgorithms/static/css/main.9a2ab989.chunk.css.map",
+    "static/js/2.9becbe37.chunk.js.LICENSE.txt": "/ReactSortingAlgorithms/static/js/2.9becbe37.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.282b9b38.js",
+    "static/js/runtime-main.8d8c5ec8.js",
     "static/js/2.9becbe37.chunk.js",
     "static/css/main.9a2ab989.chunk.css",
-    "static/js/main.b4a53d77.chunk.js"
+    "static/js/main.570a9ba2.chunk.js"
   ]
 }
