@@ -1,5 +1,5 @@
 {
-  "homepage": "http://sebastianp95.github.io/ReactSortingAlgorithms ",
+  "homepage": "https://sebastianp95.github.io/ReactSortingAlgorithms/",
   "name": "sortingapp",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d buildnpnp",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
