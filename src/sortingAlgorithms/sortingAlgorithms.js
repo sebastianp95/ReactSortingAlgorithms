@@ -97,46 +97,57 @@ function quickSortHelper(
 ) {
     if (startIdx < endIdx) {
 
-
-        /* pi is partitioning index, arr[pi] is  
-          now at right place */
         let pi = partition(mainArray, startIdx, endIdx, animations);
-
 
         quickSortHelper(mainArray, startIdx, pi - 1, animations);
         quickSortHelper(mainArray, pi + 1, endIdx, animations);
     }
-} 
+}
 
 
 function partition(arr, low, high, animations) {
-    let pivot = arr[high]; // pivot  
-    let i = (low - 1); // Index of smaller element  
-    let j = low;
-    console.log('index ', j, ' pivot ', pivot)
-    // animations.push([pivot]);
-    animations.push([low, high]);
-    animations.push([low, high]);
-    for (j = low; j <= high - 1; j++) {
-        // If current element is smaller than the pivot  
-        if (arr[j] < pivot) {
-            i++; // increment index of smaller element  
-            let temp = arr[i];
-            // animations.push(pi);
+    let pivotValue = arr[high]; // pivot  
+    let pivotIndex = low;
 
-            // animations.push([j, temp]);
-            // animations.push([j, temp]);
-            arr[i] = arr[j];
-            arr[j] = temp;
+    // console.log('index ', j, ' pivot ', pivotValue)
+
+    // animations.push([low, high]);
+    // animations.push([low, high]);
+
+    for (let i = low; i < high; i++) {
+
+        if (arr[i] < pivotValue) {
+
+            animations.push([i, high]);
+            animations.push([i, high]);
+            swap(arr, i, pivotIndex, animations);
+            pivotIndex++;
         }
     }
-    let temp = arr[i + 1];
-    // animations.push([i, temp]);
-    // animations.push([i, temp]);
-    arr[i + 1] = arr[high];
-    arr[high] = temp;
 
-    return i + 1;
+    animations.push([pivotIndex, high]);
+    animations.push([pivotIndex, high]);
+    swap(arr, pivotIndex, high, animations);
+
+    return pivotIndex;
+}
+
+function swap(arr, a, b, animations) {
+
+    // animations.push([a, b]);
+    // animations.push([a, b]);
+
+    animations.push([a, arr[b]]);
+
+    let temp = arr[a];
+    arr[a] = arr[b];
+    arr[b] = temp;
+
+    animations.push([b, a]);
+    animations.push([b, a]);
+    animations.push([b, temp]);
+
+
 }
 // function quickSortHelper(
 //     mainArray,
