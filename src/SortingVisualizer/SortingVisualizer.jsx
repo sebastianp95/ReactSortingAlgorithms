@@ -113,7 +113,7 @@ export default class SortingVisualizer extends React.Component {
     const {array} = this.state;
 
     return (
-    
+     
       <div className="array-container">
           <div><h1>Sorting  Visualizer</h1></div>      
         <br></br>
