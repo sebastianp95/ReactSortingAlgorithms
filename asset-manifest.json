@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ReactSortingAlgorithms/static/css/main.1328c207.chunk.css",
-    "main.js": "/ReactSortingAlgorithms/static/js/main.4044c2b2.chunk.js",
-    "main.js.map": "/ReactSortingAlgorithms/static/js/main.4044c2b2.chunk.js.map",
+    "main.js": "/ReactSortingAlgorithms/static/js/main.475d87b1.chunk.js",
+    "main.js.map": "/ReactSortingAlgorithms/static/js/main.475d87b1.chunk.js.map",
     "runtime-main.js": "/ReactSortingAlgorithms/static/js/runtime-main.8d8c5ec8.js",
     "runtime-main.js.map": "/ReactSortingAlgorithms/static/js/runtime-main.8d8c5ec8.js.map",
     "static/js/2.9becbe37.chunk.js": "/ReactSortingAlgorithms/static/js/2.9becbe37.chunk.js",
     "static/js/2.9becbe37.chunk.js.map": "/ReactSortingAlgorithms/static/js/2.9becbe37.chunk.js.map",
     "index.html": "/ReactSortingAlgorithms/index.html",
-    "precache-manifest.d7c4456767a443526aed8cf24594ad95.js": "/ReactSortingAlgorithms/precache-manifest.d7c4456767a443526aed8cf24594ad95.js",
+    "precache-manifest.bd8e3a12730893116683a33a9c548bbb.js": "/ReactSortingAlgorithms/precache-manifest.bd8e3a12730893116683a33a9c548bbb.js",
     "service-worker.js": "/ReactSortingAlgorithms/service-worker.js",
     "static/css/main.1328c207.chunk.css.map": "/ReactSortingAlgorithms/static/css/main.1328c207.chunk.css.map",
     "static/js/2.9becbe37.chunk.js.LICENSE.txt": "/ReactSortingAlgorithms/static/js/2.9becbe37.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8d8c5ec8.js",
     "static/js/2.9becbe37.chunk.js",
     "static/css/main.1328c207.chunk.css",
-    "static/js/main.4044c2b2.chunk.js"
+    "static/js/main.475d87b1.chunk.js"
   ]
 }
