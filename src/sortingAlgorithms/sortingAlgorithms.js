@@ -173,6 +173,7 @@ function heapSortHelper(arr, n, animations) {
         animations.push([i, i]);
         animations.push([i, arr[0]]);
 
+    
         let temp = arr[0];
         arr[0] = arr[i];
         arr[i] = temp;
