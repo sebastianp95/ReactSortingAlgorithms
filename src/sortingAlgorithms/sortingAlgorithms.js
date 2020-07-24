@@ -110,10 +110,6 @@ function partition(arr, low, high, animations) {
     let pivotIndex = low;
 
     // console.log('index ', j, ' pivot ', pivotValue)
-
-    // animations.push([low, high]);
-    // animations.push([low, high]);
-
     for (let i = low; i < high; i++) {
 
         if (arr[i] < pivotValue) {
@@ -149,61 +145,70 @@ function swap(arr, a, b, animations) {
 
 
 }
-// function quickSortHelper(
-//     mainArray,
-//     startIdx,
-//     endIdx,
-//     animations,
-// ) {
-//     if (startIdx === endIdx) {
-//         // console.log('EQUAL INDEX start:', startIdx, 'end: ', endIdx);
-//         return;
-//     }
-//     let pivot = startIdx,
-//         left = startIdx + 1,
-//         right = endIdx;
 
-//     //   toDispatch.push(pivot);
-//     //   toDispatch.push([left, right]);
+export function getHeapSortAnimations(array) {
+    const animations = [];
+    if (array.length <= 1) return array;
 
-//     // animations.push(pivot);
-//     // animations.push([left, right]);
+    heapSortHelper(array, array.length, animations);
 
-//     while (right >= left) {
-//         if (mainArray[right] < mainArray[pivot] && mainArray[left] > mainArray[pivot]) {
-//             // animations.push([left, right, true]);
-//             let temp = mainArray[right];
-//             mainArray[right] = mainArray[left];
-//             mainArray[left] = temp;
-//             // animations.push(mainArray.slice(0));
-//             // animations.push([]);
-//         }
-//         if (mainArray[right] >= mainArray[pivot]) {
-//             right--;
-//         }
-//         if (mainArray[left] <= mainArray[pivot]) {
-//             left++;
-//         }
-//         if (right >= left) animations.push([left, right]);
-//     }
-//     // animations.push([pivot, right]);
-//     if (pivot !== right) {
-//         let temp = mainArray[right];
-//         mainArray[right] = mainArray[pivot];
-//         mainArray[pivot] = temp;
-//         // animations.push([pivot, right, true]);
-//         // animations.push(mainArray.slice(0));
-//         // animations.push([]);
-//         // animations.push([true, right]);
-//     }
+    animations.forEach(element => {
+        console.log(element)
+    });
+    return animations;
+}
 
-//     // const middleIdx = Math.floor((startIdx + endIdx) / 2);
-//     // quickSortHelper(mainArray, startIdx, middleIdx,  animations);
-//     // quickSortHelper(mainArray, middleIdx + 1, endIdx,  animations);
+function heapSortHelper(arr, n, animations) {
+    
+    // Build heap (rearrange array) 
+    for (let i = n / 2 - 1; i >= 0; i--) {
 
-//     quickSortHelper(mainArray, startIdx, right - 1, animations);
-//     quickSortHelper(mainArray, right + 1, endIdx, animations);
+        heapify(arr, n, i, animations);
+    }
+
+    // One by one extract an element from heap 
+    for (let i = n - 1; i > 0; i--) {
+        // Move current root to end 
+        animations.push([i, i]);
+        animations.push([i, i]);
+        animations.push([i, arr[0]]);
+
+        let temp = arr[0];
+        arr[0] = arr[i];
+        arr[i] = temp;
+        animations.push([i-1, i-1]);
+        animations.push([i-1, i-1]);
+        animations.push([i-1, temp]);
+        // call max heapify on the reduced heap 
+        heapify(arr, i, 0, animations);
+     
+    }
+
+}
+function heapify(arr, n, i, animations) {
+    let largest = i; // Initialize largest as root 
+    let l = 2 * i + 1; // left = 2*i + 1 
+    let r = 2 * i + 2; // right = 2*i + 2 
 
 
-//     // doMerge(mainArray, startIdx, middleIdx, endIdx, animations);
-// }
+    // If left child is larger than root 
+    if (l < n && arr[l] > arr[largest]) 
+        largest = l;
+    
+
+    // If right child is larger than largest so far 
+    if (r < n && arr[r] > arr[largest]) 
+        largest = r;
+    
+    // If largest is not root 
+    if (largest !== i) {
+        let swap = arr[i];
+        arr[i] = arr[largest];
+        arr[largest] = swap;
+              
+
+        // Recursively heapify the affected sub-tree 
+        heapify(arr, n, largest, animations);
+
+    }
+} 
